@@ -7,10 +7,9 @@ def chomp(string):
   
   if string.endswith("\r\n"):
     return string[0:-2]
-
-  if string.endswith("\n"):
+  elif string.endswith("\n"):
     return string[0:-1]
-
-  if string.endswith("\r"):
+  elif string.endswith("\r"):
     return string[0:-1]
-
+  else:
+    return string
