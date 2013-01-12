@@ -11,6 +11,6 @@ def chomp(string):
   if string.endswith("\n"):
     return string[0:-1]
 
-  if string.endswith("\r")
+  if string.endswith("\r"):
     return string[0:-1]
 
