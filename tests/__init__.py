@@ -11,3 +11,7 @@ class Test_chomp(TestCase):
       self.assertEqual(chomp(input), input)
 
 
+  def test_it_only_removes_the_last_newline(self):
+    input = "hello\r\n\n"
+    for n in newlines:
+      self.assertEqual(chomp(input + n), input)
