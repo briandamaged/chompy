@@ -15,3 +15,6 @@ class Test_chomp(TestCase):
     input = "hello\r\n\n"
     for n in newlines:
       self.assertEqual(chomp(input + n), input)
+
+
+
